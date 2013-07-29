@@ -1,0 +1,25 @@
+{
+  "name": "garbage-stream",
+  "version": "0.0.1",
+  "description": "Stream of random json data",
+  "main": "index.js",
+  "directories": {
+    "lib": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/diversario/garbage-stream.git"
+  },
+  "keywords": [
+    "garbage", "dummy", "random", "data", "stream"
+  ],
+  "author": {
+    "name": "Ilya Shaisultanov",
+    "email": "ilya.shaisultanov@gmail.com",
+    "url": "http://github.com/diversario"
+  },
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.4"
+  }
+}
