@@ -20,13 +20,13 @@ var gs = new GS({
   'string': '',
   'number': '',
   'object': 3
-}, 10)
-
-gs.on('data', function (data) {
-  console.log(data);
 })
 
-gs.resume()
+gs.on('readable', function () {
+  while(true) {
+    console.log(gs.read())
+  }
+})
 
 // output
 &=f5I
@@ -46,6 +46,6 @@ Options
 =======
 
 ```
-var gs = new GarbageStream({}, 20)
+var gs = new GarbageStream({})
 ```
-Constructor takes an object with options for [node-garbage](https://github.com/substack/node-garbage) and a number of objects (items) to emit (default is Infinity).
+Constructor takes an object with options for [node-garbage](https://github.com/substack/node-garbage).

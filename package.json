@@ -1,6 +1,6 @@
 {
   "name": "garbage-stream",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Stream of random json data",
   "main": "index.js",
   "directories": {

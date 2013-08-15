@@ -6,10 +6,9 @@ var gs = new GS({
   'string': '',
   'number': '',
   'object': 3
-}, 10)
-
-gs.on('data', function (data) {
-  console.log(data);
 })
 
-gs.resume()
+gs.on('readable', function () {
+  while (true) console.log(gs.read());
+})
+
